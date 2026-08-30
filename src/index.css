@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Vazirmatn", sans-serif;
+  direction: rtl;
+  background: #111315;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
