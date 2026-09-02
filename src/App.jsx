@@ -34,11 +34,16 @@ function App() {
           <button
             className="brand"
             onClick={() => scrollToSection("home")}
+            aria-label="بازگشت به ابتدای سایت"
           >
             MmdMehdi<span>.</span>
           </button>
 
-          <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <nav
+            id="main-navigation"
+            className={`nav-links ${menuOpen ? "open" : ""}`}
+            aria-label="منوی اصلی"
+          >
             <button onClick={() => scrollToSection("about")}>
               درباره من
             </button>
@@ -61,6 +66,8 @@ function App() {
               className="theme-button"
               onClick={() => setDarkMode(!darkMode)}
               aria-label="تغییر تم"
+              aria-pressed={!darkMode}
+              title="تغییر حالت روشن و تاریک"
             >
               {darkMode ? "☀" : "☾"}
             </button>
@@ -68,7 +75,10 @@ function App() {
             <button
               className="menu-button"
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="منو"
+              aria-label={menuOpen ? "بستن منو" : "باز کردن منو"}
+              aria-expanded={menuOpen}
+              aria-controls="main-navigation"
+              title={menuOpen ? "بستن منو" : "باز کردن منو"}
             >
               ☰
             </button>
