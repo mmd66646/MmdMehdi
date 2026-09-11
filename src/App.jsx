@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 function App() {
@@ -590,6 +591,7 @@ function App() {
 
       </footer>
 
+      <Analytics />
     </div>
   );
 }

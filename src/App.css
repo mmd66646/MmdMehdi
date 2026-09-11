@@ -11,13 +11,13 @@
 }
 
 :root.light-mode {
-  --bg: #e9edf3;
-  --card: #f6f8fb;
-  --card-hover: #eef2f7;
-  --text: #171b23;
-  --muted: #5d6572;
-  --border: #cdd4df;
-  --accent: #4f63d8;
+  --bg: #e9e7e2;
+  --card: #f7f5f1;
+  --card-hover: #efede8;
+  --text: #1b1d21;
+  --muted: #62656b;
+  --border: #d3d0c8;
+  --accent: #5367e8;
   --green: #26965c;
 }
 
@@ -433,6 +433,26 @@ button {
   border-radius: inherit;
   mask-image: radial-gradient(ellipse at center, black 58%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse at center, black 58%, transparent 100%);
+}
+
+
+/* =========================
+   LIGHT MODE HERO PHOTO
+   Dark Mode stays unchanged.
+========================= */
+
+.light-mode .hero-photo {
+  border: 1px solid var(--border);
+  box-shadow: 0 22px 55px rgba(31, 38, 50, 0.14);
+}
+
+.light-mode .hero-photo::before {
+  opacity: 0.35;
+}
+
+.light-mode .hero-photo img {
+  mask-image: none;
+  -webkit-mask-image: none;
 }
 
 /* =========================
