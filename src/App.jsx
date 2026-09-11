@@ -169,7 +169,7 @@ function App() {
         <section id="home" className="hero">
           <div className="hero-container">
 
-            <div className="hero-content">
+            <div className={`hero-content ${isEnglish ? "hero-english" : "hero-persian"}`}>
 
               <div className="status">
                 <span></span>
@@ -243,49 +243,17 @@ function App() {
               </div>
             </div>
 
-            {/* PROFILE CARD */}
-            <div className="profile-card">
-
-              <div className="card-top">
-
-                <div className="dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-
-                <span>about_me.txt</span>
-
-              </div>
-
-              <div className="profile-content">
-
-                <p>
-                  <span>name:</span> Mohammad Mahdi
-                </p>
-
-                <p>
-                  <span>brand:</span> MmdMehdi
-                </p>
-
-                <p>
-                  <span>status:</span> Learning
-                </p>
-
-                <p>
-                  <span>focus:</span> Technology
-                </p>
-
-                <p>
-                  <span>next:</span> Build something real
-                </p>
-
-              </div>
-
-              <div className="card-bottom">
-                KEEP LEARNING. KEEP BUILDING.
-              </div>
-
+            {/* HERO PHOTO */}
+            <div className="hero-photo">
+              <img
+                src="/hero-profile.jpg"
+                alt={
+                  isEnglish
+                    ? "Mohammad Mahdi Motamedi"
+                    : "محمد مهدی معتمدی"
+                }
+              />
+              <div className="photo-glow"></div>
             </div>
 
           </div>
