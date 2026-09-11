@@ -376,7 +376,7 @@ function App() {
                 <small>
                   {isEnglish
                     ? "Good understanding & comprehension"
-                    : "در مسیر یادگیری و استفاده"}
+                    : "آشنایی و درک خوب "}
                 </small>
               </div>
 
