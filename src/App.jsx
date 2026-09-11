@@ -51,7 +51,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className={`app ${isEnglish ? "is-english" : "is-persian"}`}>
       {/* NAVBAR */}
       <header className="navbar">
         <div className="nav-container">
@@ -169,7 +169,7 @@ function App() {
         <section id="home" className="hero">
           <div className="hero-container">
 
-            <div className={`hero-content ${isEnglish ? "hero-english" : "hero-persian"}`}>
+            <div className="hero-content">
 
               <div className="status">
                 <span></span>
@@ -195,9 +195,15 @@ function App() {
                 </span>
 
                 <span className="main-name">
-                  {isEnglish
-                    ? "I'm Mohammad Mahdi"
-                    : "من محمد مهدی هستم"}
+                  {isEnglish ? (
+                    <>
+                      I'm <span className="signature-name">Mohammad Mahdi</span>
+                    </>
+                  ) : (
+                    <>
+                      من <span className="signature-name">محمد مهدی</span> هستم
+                    </>
+                  )}
 
                   <span className="small-emoji">
                     🫣
@@ -244,16 +250,11 @@ function App() {
             </div>
 
             {/* HERO PHOTO */}
-            <div className="hero-photo">
+            <div className="hero-photo" aria-hidden="true">
               <img
                 src="/hero-profile.jpg"
-                alt={
-                  isEnglish
-                    ? "Mohammad Mahdi Motamedi"
-                    : "محمد مهدی معتمدی"
-                }
+                alt=""
               />
-              <div className="photo-glow"></div>
             </div>
 
           </div>
