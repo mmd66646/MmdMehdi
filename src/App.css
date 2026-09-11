@@ -11,12 +11,12 @@
 }
 
 :root.light-mode {
-  --bg: #e9e7e2;
-  --card: #f7f5f1;
-  --card-hover: #efede8;
-  --text: #1b1d21;
-  --muted: #62656b;
-  --border: #d3d0c8;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --card-hover: #eef1f5;
+  --text: #111827;
+  --muted: #64748b;
+  --border: #d9dee7;
   --accent: #5367e8;
   --green: #26965c;
 }
