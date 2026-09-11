@@ -999,3 +999,149 @@ footer {
     width: 100%;
   }
 }
+/* =========================
+   ENGLISH / LTR FIX
+   ========================= */
+
+html[dir="ltr"] {
+  direction: ltr;
+}
+
+html[dir="ltr"] body,
+html[dir="ltr"] .app,
+html[dir="ltr"] main,
+html[dir="ltr"] footer {
+  direction: ltr;
+}
+
+/* Navbar */
+html[dir="ltr"] .nav-container,
+html[dir="ltr"] .nav-links,
+html[dir="ltr"] .nav-actions {
+  direction: ltr;
+}
+
+/* Hero */
+html[dir="ltr"] .hero-content,
+html[dir="ltr"] .hero-title,
+html[dir="ltr"] .hero-subtitle,
+html[dir="ltr"] .hero-description {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: plaintext;
+}
+
+/* Hero buttons */
+html[dir="ltr"] .hero-buttons {
+  direction: ltr;
+}
+
+html[dir="ltr"] .primary-button,
+html[dir="ltr"] .secondary-button {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="ltr"] .primary-button span {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Sections */
+html[dir="ltr"] .section,
+html[dir="ltr"] .section-header,
+html[dir="ltr"] .section-description,
+html[dir="ltr"] .about-main,
+html[dir="ltr"] .about-side,
+html[dir="ltr"] .skill-item,
+html[dir="ltr"] .project {
+  direction: ltr;
+}
+
+/* English text punctuation */
+html[dir="ltr"] .section-header h2,
+html[dir="ltr"] .section-description,
+html[dir="ltr"] .about-main p,
+html[dir="ltr"] .about-side p,
+html[dir="ltr"] .skill-item p,
+html[dir="ltr"] .skill-item small,
+html[dir="ltr"] .project h3,
+html[dir="ltr"] .project p {
+  direction: ltr;
+  unicode-bidi: plaintext;
+}
+
+/* Profile card stays LTR */
+html[dir="ltr"] .profile-card,
+html[dir="ltr"] .card-top,
+html[dir="ltr"] .profile-content,
+html[dir="ltr"] .card-bottom {
+  direction: ltr;
+}
+
+/* Contact */
+html[dir="ltr"] .contact-content,
+html[dir="ltr"] .contact-label,
+html[dir="ltr"] .contact-content h2,
+html[dir="ltr"] .contact-content > p {
+  direction: ltr;
+  unicode-bidi: plaintext;
+}
+
+html[dir="ltr"] .contact-content h2 {
+  text-align: center;
+}
+
+html[dir="ltr"] .contact-links {
+  direction: ltr;
+}
+
+html[dir="ltr"] .contact-links a {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Footer */
+html[dir="ltr"] .footer-container {
+  direction: ltr;
+}
+
+html[dir="ltr"] .footer-container p,
+html[dir="ltr"] .footer-container small {
+  direction: ltr;
+  unicode-bidi: plaintext;
+}
+
+/* Mobile */
+@media (max-width: 850px) {
+  html[dir="ltr"] .nav-links {
+    direction: ltr;
+  }
+
+  html[dir="ltr"] .nav-links button {
+    direction: ltr;
+  }
+
+  html[dir="ltr"] .project {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 600px) {
+  html[dir="ltr"] .hero-content,
+  html[dir="ltr"] .hero-title,
+  html[dir="ltr"] .hero-subtitle,
+  html[dir="ltr"] .hero-description,
+  html[dir="ltr"] .section,
+  html[dir="ltr"] .about-main,
+  html[dir="ltr"] .about-side,
+  html[dir="ltr"] .skill-item,
+  html[dir="ltr"] .project {
+    direction: ltr;
+  }
+
+  html[dir="ltr"] .contact-content h2 {
+    direction: ltr;
+    text-align: center;
+  }
+}
